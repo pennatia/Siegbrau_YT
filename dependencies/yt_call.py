@@ -13,7 +13,7 @@ class YT_Call():
 
         api_service_name = "youtube"
         api_version = "v3"
-        DEVELOPER_KEY = "AIzaSyA83OoEIerPAYRDe-hcotFENGP95-Ov_XA"
+        DEVELOPER_KEY = "DEVELOPER_KEY"
 
         youtube = googleapiclient.discovery.build(
             api_service_name, api_version, developerKey = DEVELOPER_KEY)
