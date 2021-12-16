@@ -5,7 +5,7 @@ class YT_Call():
     def __init__(self, video_id):
         self.video_id = video_id
     
-    def call(video_id, n_pages, priority):
+    def call(video_id, n_pages = 10, priority = 'time'):
         # Disable OAuthlib's HTTPS verification when running locally.
         # *DO NOT* leave this option enabled in production.
         os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
@@ -29,8 +29,10 @@ class YT_Call():
 
         response = dict([])
         response[i] = request.execute()
-        npt = response[i]['nextPageToken']
 
+        npt = False
+        if 'nextPageToken' in response[i]:
+            npt = response[i]['nextPageToken']
 
         while npt:
             i = i+1

@@ -5,8 +5,8 @@ import tkinter as tk
 from PIL import ImageTk, Image
 
 # Initialize parameters
-pages_to_iterate = 100
-comment_order = 'time'
+pages_to_iterate = 50
+comment_order = 'relevance'
 
 
 # Initialise & Style GUI
