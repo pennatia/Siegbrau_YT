@@ -4,6 +4,10 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import tkinter as tk
 from PIL import ImageTk, Image
 
+pages_to_iterate = 100
+comment_order = 'time'
+
+
 # Initialise & Style GUI
 root = tk.Tk()
 

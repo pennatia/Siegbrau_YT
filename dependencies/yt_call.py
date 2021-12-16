@@ -1,10 +1,6 @@
 import os
 import googleapiclient.discovery
 
-pages_to_iterate = 10
-comment_order = 'time'
-
-
 class YT_Call():
     def __init__(self, video_id):
         self.video_id = video_id
