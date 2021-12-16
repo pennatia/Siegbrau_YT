@@ -44,18 +44,16 @@ def get_ratings():
         canvas1.create_window(200,220, window = label)
         return None
         
-    dataset = YT_Call.call(video_id = v_id)
-
+    dataset = YT_Call.call(video_id = v_id, priority = 'relevance', n_pages = 100)
     comments = []
     comment_ids = []
     like_count = []
 
-    npt = dataset['nextPageToken']
-
-    for c in dataset['items']:
-        comments += [c['snippet']['topLevelComment']['snippet']['textDisplay']]
-        comment_ids += [c['snippet']['topLevelComment']['id']]
-        like_count += [c['snippet']['topLevelComment']['snippet']['likeCount']]
+    for i in range(len(dataset)):
+        for c in dataset[i]['items']:
+            comments += [c['snippet']['topLevelComment']['snippet']['textDisplay']]
+            comment_ids += [c['snippet']['topLevelComment']['id']]
+            like_count += [c['snippet']['topLevelComment']['snippet']['likeCount']]
 
 
     pos_score = []
