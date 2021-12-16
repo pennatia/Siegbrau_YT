@@ -4,6 +4,7 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import tkinter as tk
 from PIL import ImageTk, Image
 
+# Initialize parameters
 pages_to_iterate = 100
 comment_order = 'time'
 
@@ -48,7 +49,7 @@ def get_ratings():
         canvas1.create_window(200,220, window = label)
         return None
         
-    dataset = YT_Call.call(video_id = v_id, priority = 'relevance', n_pages = 100)
+    dataset = YT_Call.call(video_id = v_id, priority = comment_order, n_pages = pages_to_iterate)
     comments = []
     comment_ids = []
     like_count = []
