@@ -1,11 +1,15 @@
 import os
 import googleapiclient.discovery
 
+pages_to_iterate = 10
+comment_order = 'time'
+
+
 class YT_Call():
     def __init__(self, video_id):
         self.video_id = video_id
     
-    def call(video_id, n_pages = 10, priority = 'time'):
+    def call(video_id, n_pages = pages_to_iterate, priority = comment_order):
         # Disable OAuthlib's HTTPS verification when running locally.
         # *DO NOT* leave this option enabled in production.
         os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
