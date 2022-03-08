@@ -5,14 +5,14 @@ import tkinter as tk
 from PIL import ImageTk, Image
 
 # Initialize parameters
-pages_to_iterate = 50
-comment_order = 'relevance'
+pages_to_iterate = 40
+comment_order = 'time'
 
 
 # Initialise & Style GUI
 root = tk.Tk()
 
-root.wm_iconbitmap(True,'dependencies/images/siegbrau.ico')
+#root.wm_iconbitmap(True,'dependencies/images/siegbrau.ico')
 root.wm_title('Siegbrau YT')
 
 canvas1 = tk.Canvas(root, bg='black', width = 400, height = 400)
