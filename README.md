@@ -8,7 +8,8 @@ In its current form, the application is capable of taking in any YouTube Link, a
 # Requirements
 Requirements can be found in the requirements.txt file, and installed as follows:
 ```
-function test() {
-  console.log("notice the blank line before this function?");
-}
+pip install -r requirements.txt
+
 ```
+
+
