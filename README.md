@@ -11,5 +11,5 @@ Requirements can be found in the requirements.txt file, and installed as follows
 pip install -r requirements.txt
 
 ```
-
+Currently, the App 
 
