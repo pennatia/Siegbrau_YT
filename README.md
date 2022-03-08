@@ -11,5 +11,12 @@ Requirements can be found in the requirements.txt file, and installed as follows
 pip install -r requirements.txt
 
 ```
-Currently, the App 
+Currently, the App requires a Google API Developer Key, which can be inserted in the "YT_Call.py" file in the program's dependencies folder. 
+Once an API key is inserted, the program will function for any YouTube URL (with extra parameters pruned). 
+
+The app offers a very simplistic tkinter UI:
+
+![alt text](https://github.com/pennatia/Siegbrau_YT/blob/master/dependencies/images/screengrab.png)
+
+More updates to come!
 
